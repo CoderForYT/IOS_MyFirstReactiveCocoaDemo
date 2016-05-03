@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="loginButton" destination="K4X-qH-oxJ" id="zHg-3t-BC1"/>
+                <outlet property="passwordTextField" destination="JEL-kF-ibc" id="Yjp-YF-1pT"/>
+                <outlet property="userNameTextField" destination="yeU-0N-GT2" id="9un-8M-xou"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ujY-zd-jCe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yeU-0N-GT2">
+                    <rect key="frame" x="20" y="74" width="560" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JEL-kF-ibc">
+                    <rect key="frame" x="20" y="114" width="560" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4X-qH-oxJ">
+                    <rect key="frame" x="50" y="164" width="500" height="40"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="s36-Pb-SZJ"/>
+                    </constraints>
+                    <state key="normal" title="登录"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="K4X-qH-oxJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="C6U-re-Omx"/>
+                <constraint firstAttribute="trailing" secondItem="K4X-qH-oxJ" secondAttribute="trailing" constant="50" id="KPD-L2-oYp"/>
+                <constraint firstItem="JEL-kF-ibc" firstAttribute="top" secondItem="yeU-0N-GT2" secondAttribute="bottom" constant="20" id="Q8U-lt-WS9"/>
+                <constraint firstItem="yeU-0N-GT2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="74" id="QjH-gg-qEu"/>
+                <constraint firstItem="JEL-kF-ibc" firstAttribute="top" secondItem="yeU-0N-GT2" secondAttribute="bottom" constant="10" id="TTT-tE-bYV"/>
+                <constraint firstItem="JEL-kF-ibc" firstAttribute="trailing" secondItem="yeU-0N-GT2" secondAttribute="trailing" id="VVf-ED-TB8"/>
+                <constraint firstItem="yeU-0N-GT2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZjG-Vm-aaS"/>
+                <constraint firstItem="JEL-kF-ibc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fZ2-ka-WxT"/>
+                <constraint firstItem="K4X-qH-oxJ" firstAttribute="top" secondItem="JEL-kF-ibc" secondAttribute="bottom" constant="20" id="fa4-rn-2lg"/>
+                <constraint firstItem="JEL-kF-ibc" firstAttribute="leading" secondItem="yeU-0N-GT2" secondAttribute="leading" id="icV-xW-c7m"/>
+                <constraint firstItem="K4X-qH-oxJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uVm-Zt-gvA"/>
+                <constraint firstAttribute="trailing" secondItem="yeU-0N-GT2" secondAttribute="trailing" constant="20" id="yTc-6p-XmW"/>
+                <constraint firstItem="yeU-0N-GT2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="zL8-dp-WtP"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Q8U-lt-WS9"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="335" y="449"/>
+        </view>
+    </objects>
+</document>
